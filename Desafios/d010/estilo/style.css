@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid' ;
+    src: url(../fontes/idroid.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor0: #C5EBD6;
+    --cor1: #84E1AD;
+    --cor2: #2A9359;
+    --cor3: #195C38;
+    --cor4: #032a15;
+
+    --font-pardao: arial, verdana, sans-serif;
+    --font-destaque: 'Bebas Neue', sans-serif;
+    --font-android: 'idroid', hand;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), var(--cor4));
+    padding-top: 30px;
+    height: 150px;
+}
+
+header > h1 {
+    font-family: var(--font-destaque);
+    text-align: center;
+    font-weight: normal;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.311);
+    margin-bottom: 10px;
+    color: white;
+}
+header > p {
+    text-align: center;
+    color: white;
+    font-family: var(--font-pardao);
+    font-size: 1.2em;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--cor4);
+    text-align: left;
+    padding-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.319);
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-pardao);
+    font-size: 0.8em;
+    margin: 0px 10px;
+}
+
+nav > a:hover {
+    color: var(--cor1);
+    text-decoration: underline;
+}
+
+main{
+    max-width: 800px;
+    min-width: 320px;
+    background-color: white;
+    border-radius:  0px 0px 15px 15px;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.437);
+    padding: 0px 10px;
+    margin: auto;
+}
+
+article > h1 {
+    font-family: var(--font-android);
+    color: var(--cor4);
+    font-weight: normal;
+}
+
+article > h2{
+    font-family: var(--font-android);
+    font-size: 1.5em;
+    font-weight: normal;
+    color: var(--cor3);
+    padding-left: 10px;
+    background-image: linear-gradient(to right, var(--cor1), rgba(0, 0, 0, 0))
+}
+
+main p{
+    font-family: var(--font-pardao);
+    margin: 20px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+main img {
+    width: 99%;
+}
+
+main  img.pequeno{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+
+main strong {
+    color: var(--cor3);
+    font-weight: bolder;
+
+}
+
+main strong:hover {
+    background-color: var(--cor1);
+    padding: 2px 4px;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-weight: bold;
+
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+main a:visited {
+    color: var(--cor2);
+}
+
+a.externo::after {
+    content: '\00A0\1f517';
+}
+
+div.video {
+    background-color: var(--cor3);
+    margin: 0px -10px 30px -10px;
+    padding: 20px;
+    padding-bottom: 55.11%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/*  
+    list-style-type: '\272\00A0\00A0'
+    272 = código para colocar um check no lugar do square 
+    \00A0 = equivalente a um espaço entre o check e o item da lista
+
+    Mas não é compatível com todo o tipo de navegador
+
+*/
+
+main ul{
+    list-style: square; 
+    list-style-position: inside;
+    margin-left: 15px;
+    columns: 2;
+}
+
+aside{
+    background-color: var(--cor0);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.242);
+}
+
+aside h3 {
+    background-color: var(--cor2);
+    font-family: var(--font-pardao);
+    font-size: 1em;
+    font-weight: normal;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0 0;
+}
+
+footer{
+    background-color: var(--cor3);
+}
+
+footer  p {
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 10px 0px;
+}

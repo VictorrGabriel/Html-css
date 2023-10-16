@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens, audios, video</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <hr>
+    <h2>Imagens</h2>
+    <p>hoje o corinthins jogou contra o palmeiras e perdeu.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagen Flexível">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <audio preload="metadata" controls ><!--loop controls (auto none)-->
+        <source src="midia/Savior - Telecasted.mp3" type="audio/mpeg">
+        <source src="midia/Savior - Telecasted.ogg" type="audio/ogg">
+        <source src="midia/Savior - Telecasted.wav" type="audio/wav">
+    </audio> <!--MP3 WAV OGG-->
+    <p>Infelizmente o seu navegador não toca audios
+        <a href="midia/Savior - Telecasted.mp3">Clique aqui para baiar</a>
+        <a href="midia/Savior - Telecasted.zip">Aqui zipado</a>
+    </p>
+    
+</body>
+</html>

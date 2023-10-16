@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid' ;
+    src: url(fontes/idroid.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+body{
+    background-color: #C5EBD6;
+    margin: 0px;
+}
+header{
+    background-image: linear-gradient(to bottom, #3BD37F, #195634);
+    margin-top: 0px;
+}
+h1#titulodosite{
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0;
+    padding: 10px;
+    font-size: 2em;
+}
+p#slogan{
+    text-align: center;
+    color: rgb(205, 205, 205);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3em;
+}
+a.link_header{
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 20px;
+    padding-bottom: 15px;
+}
+main{
+    width: 850px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.38);
+    border-radius: 0 0 10px 10px;
+}
+h1, h2{
+    font-family: 'idroid';
+}
+h2{
+    padding: 10px;
+    background-image: linear-gradient(to right, #C6ECD7, rgba(255, 255, 255, 0))
+    
+}
+h1{
+    padding: 15px;
+    color: #195C38;
+    text-align: left;
+    font-size: 2em;
+    margin-top: 0;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent:  30px;
+    text-align: justify;
+    padding: 10px;
+}
+section#seçaovideo{
+    background-color: #1A5C38;
+
+}
+p.ppcentralizar{
+    text-align: center;
+}
+p.ajuste{
+    margin-right: 400px;
+}
+aside{
+    background-color: #C5EBD6;
+    margin: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.441);
+}
+aside > article > ol{
+    list-style-type: symbols();
+}
+h3#titulo_extra{
+    background-color: #2FA866;
+    color: white;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    border-radius: 10px 10px 0 0;
+
+}
+footer{
+    background-color: #1A5C38;
+    color: white;
+    margin: 10px 0 0 0;
+}
+p#footer_p{
+    margin: 0;
+}
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none ;
+}
