@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1rem;
+    
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        td, th{
+            border: solid 2px black;
+            padding: 10px 5px;
+            
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!-- Anatomia para tabelas grandes
+        table 
+            thead
+                tr td th
+            tbody
+                tr td th
+            tfoot
+                tr td th
+    
+    -->
+
+    <table>
+        <caption>Populações das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="row1_name"></td>
+                <td class="num" id="row1_pop"></td>
+            </tr>
+            <tr>
+                <td id="row2_name"></td>
+                <td class="num" id="row2_pop"></td>
+            </tr>
+            <tr>
+                <td id="row3_name"></td>
+                <td class="num" id="row3_pop"></td>
+            </tr>
+            <tr>
+                <td id="row4_name"></td>
+                <td class="num" id="row4_pop"></td>
+            </tr>
+            <tr>
+                <td id="row5_name"></td>
+                <td class="num" id="row5_pop"></td>
+            </tr>
+            <tr>
+                <td id="row6_name"></td>
+                <td class="num" id="row6_pop"></td>
+            </tr>
+            <tr>
+                <td id="row7_name"></td>
+                <td class="num" id="row7_pop"></td>
+            </tr>
+            <tr>
+                <td id="row8_name"></td>
+                <td class="num" id="row8_pop"></td>
+            </tr>
+            <tr>
+                <td id="row9_name"></td>
+                <td class="num" id="row9_pop"></td>
+            </tr>
+            <tr>
+                <td id="row10_name"></td>
+                <td class="num" id="row10_pop"></td>
+            </tr>
+            <tr>
+                <td id="row11_name"></td>
+                <td class="num" id="row11_pop"></td>
+            </tr>
+            <tr>
+                <td id="row12_name"></td>
+                <td class="num" id="row12_pop"></td>
+            </tr>
+            <tr>
+                <td id="row13_name"></td>
+                <td class="num" id="row13_pop"></td>
+            </tr>
+            <tr>
+                <td id="row14_name"></td>
+                <td class="num" id="row14_pop"></td>
+            </tr>
+            <tr>
+                <td id="row15_name"></td>
+                <td class="num" id="row15_pop"></td>
+            </tr>
+            <tr>
+                <td id="row16_name"></td>
+                <td class="num" id="row16_pop"></td>
+            </tr>
+            <tr>
+                <td id="row17_name"></td>
+                <td class="num" id="row17_pop"></td>
+            </tr>
+            <tr>
+                <td id="row18_name"></td>
+                <td class="num" id="row18_pop"></td>
+            </tr>
+            <tr>
+                <td id="row19_name"></td>
+                <td class="num" id="row19_pop"></td>
+            </tr>
+            <tr>
+                <td id="row20_name"></td>
+                <td class="num" id="row20_pop"></td>
+            </tr>
+            <tr>
+                <td id="row21_name"></td>
+                <td class="num" id="row21_pop"></td>
+            </tr>
+            <tr>
+                <td id="row22_name"></td>
+                <td class="num" id="row22_pop"></td>
+            </tr>
+            <tr>
+                <td id="row23_name"></td>
+                <td class="num" id="row23_pop"></td>
+            </tr>
+            <tr>
+                <td id="row24_name"></td>
+                <td class="num" id="row24_pop"></td>
+            </tr>
+            <tr>
+                <td id="row25_name"></td>
+                <td class="num" id="row25_pop"></td>
+            </tr>
+            <tr>
+                <td id="row26_name"></td>
+                <td class="num" id="row26_pop"></td>
+            </tr>
+            <tr>
+                <td id="row27_name"></td>
+                <td class="num" id="row27_pop"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de População</th>
+                <td class="num" id="total"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="script/jsTabelas.js"></script>
+
+</body>
+</html>

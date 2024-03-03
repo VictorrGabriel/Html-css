@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+caption{
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+}
+
+table{
+    width: 500px;
+    height: 300px;
+    border-collapse:collapse ;
+}
+
+table tr{
+    vertical-align: middle;
+    text-align: center;
+}
+
+table tr > td, th{
+    border: 1px solid;
+}
